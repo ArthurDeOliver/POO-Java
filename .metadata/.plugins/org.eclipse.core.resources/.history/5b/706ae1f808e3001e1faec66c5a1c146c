@@ -1,0 +1,14 @@
+package fundamentos_objeto4;
+
+public class Aluno {
+	
+	String nome;
+	String cpf;
+	double[] notas = new double[4];
+	
+	public Aluno(String nome, String cpf) {
+		this.nome = nome;
+		this.cpf = cpg;
+	}
+	
+}

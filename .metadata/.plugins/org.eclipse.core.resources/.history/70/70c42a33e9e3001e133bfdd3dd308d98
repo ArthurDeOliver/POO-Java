@@ -1,0 +1,22 @@
+package encap_e_abs2;
+
+public class main {
+	public static void main(String[] args) {
+		
+		Aviao TAM = new Aviao(10.0,900.0);
+		double vel = TAM.getVelocidade();
+		double alt = TAM.getAltitude();
+		
+		System.out.print("velocidade: "+vel + "I altitude: "+alt);
+		
+		TAM.ModificarAltitude(-1);
+		TAM.ModificarVelocidade(-100);
+		
+		System.out.print("velocidade: "+vel + "I altitude: "+alt);
+		
+		TAM.ModificarAltitude(-10);
+		TAM.ModificarVelocidade(-200);
+		
+		System.out.print("velocidade: "+vel + "I altitude: "+alt);
+	}
+}

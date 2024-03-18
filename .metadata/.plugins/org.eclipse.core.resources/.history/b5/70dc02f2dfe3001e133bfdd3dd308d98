@@ -1,0 +1,29 @@
+package encap_e_abs1;
+
+public class Post {
+	private String texto;
+	private String link;
+	int num_like;
+	int num_share;
+	
+	public Post(String texto, String link) {
+		this.texto = texto;
+		this.link  = link;
+	}
+	
+	void setTexto(String texto) {
+		this.texto = texto;
+	}
+	
+	void setLink(String link) {
+		this.link = link;
+	}
+	
+	String getLink() {
+		return this.link;
+	}
+	
+	String getTexto() {
+		return this.texto;
+	}
+}

@@ -1,0 +1,40 @@
+package encap_e_abistracao;
+
+public class ContaBancaria {
+	//atributos privados não são acessados naturalmente, são privados, apenas usados dentro da classe
+	private String nome;
+	private double saldo;
+	
+	public ContaBancaria(String nome, double saldo) {
+		this.nome = nome;
+		this.saldo = saldo;
+	}
+	
+	//métodos get e set para ver e setar valores para os atributos privados
+	
+	//get -> retorna o valor do atributo
+	double getSaldo() {
+		return this.saldo;
+	}
+	
+	//set -> apenas altera o valor set é void, não retorna nada.
+	void setSaldo(double saldo) {
+		this.saldo = saldo;
+	}
+	
+	void setNome(String nome) {
+		this.nome = nome;
+	}
+	
+	String getNome() {
+		return this.nome;
+	}
+	
+	void creditar(double valor) {
+		this.saldo += valor;
+	}
+	
+	void debitar(double valor) {
+		this.saldo -= valor;
+	}
+}

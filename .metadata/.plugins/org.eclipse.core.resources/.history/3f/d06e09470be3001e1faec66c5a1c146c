@@ -1,0 +1,29 @@
+package fundamentos_objeto4;
+
+public class Aluno {
+	
+	String nome;
+	String cpf;
+	double[] notas = new double[4];
+	
+	public Aluno(String nome, String cpf) {
+		this.nome = nome;
+		this.cpf = cpf;
+	}
+	
+	void CalcularMedia() {
+		double soma = 0;
+		double resultado = 0;
+		double total = this.notas.length;
+		
+		for(int i = 0; i < this.notas.length; i++) {
+			soma += this.notas[i];
+		}
+		
+		resultado = soma/total;
+		
+		System.out.print(resultado);
+		
+	}
+	
+}

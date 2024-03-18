@@ -1,0 +1,55 @@
+package fundamentos_objetos;
+import java.util.*;
+
+public class main1 {
+	public static void main(String[] args) {
+		
+		Scanner read = new Scanner(System.in);
+		
+//		System.out.println("====CADASTRO DE PACIENTE====");
+//
+//		System.out.print("Digite o CÓDIGO do novo paciente:");
+//		int codigoPaciente = read.nextInt();
+//		read.nextLine();
+//		System.out.print("Digite o NOME do novo paciente:");
+//		String novoPaciente = read.nextLine();
+//		System.out.print("Digite a DATA DE NASCIMENTO do novo paciente:");
+//		String data = read.nextLine();
+//		System.out.print("Digite o GÊNERO do novo paciente:");
+//		String generoPaciente = read.nextLine();
+//		System.out.print("Digite o PLANO DE SAÚDE do novo paciente:");
+//		String planoPaciente = read.nextLine();
+//		System.out.print("Digite alguma ALERGIA do novo paciente:");
+//		String alergiaPaciente = read.nextLine();
+//		
+//		System.out.print("Digite o TIPO SANGUÍNEO do novo paciente:");
+//		String sanguePaciente = read.next();
+		
+		Paciente Paciente = new Paciente(codigoPaciente,novoPaciente,data,generoPaciente,planoPaciente,alergiaPaciente,sanguePaciente);
+
+		System.out.println(Paciente.codigo);
+		System.out.println(Paciente.nome);
+		System.out.println(Paciente.dataNascimento);
+		System.out.println(Paciente.sexo);
+		System.out.println(Paciente.planoSaude);
+		System.out.println(Paciente.alergia);
+		System.out.println(Paciente.tipoSanguineo);
+		System.out.println("========================================");
+		Paciente.codigo = 14;
+		Paciente.nome = "Novo nome";
+		Paciente.dataNascimento = "41-41-41";
+		Paciente.sexo = "Feminino";
+		Paciente.planoSaude = "unimed";
+		Paciente.alergia = "HOMEM";
+		Paciente.tipoSanguineo = "B-";
+		
+		System.out.println(Paciente.codigo);
+		System.out.println(Paciente.nome);
+		System.out.println(Paciente.dataNascimento);
+		System.out.println(Paciente.sexo);
+		System.out.println(Paciente.planoSaude);
+		System.out.println(Paciente.alergia);
+		System.out.println(Paciente.tipoSanguineo);
+		
+	}
+}

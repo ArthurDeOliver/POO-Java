@@ -1,0 +1,24 @@
+package lista_string;
+import java.util.Scanner; 
+
+public class Questao1 {
+	public static void main(String[] args) {
+		
+		Scanner read = new Scanner(System.in);
+		
+		System.out.print("digite o nome da pessoa 1: ");
+		String nome1 = read.next();
+		
+		System.out.print("digite o nome da pessoa 2: ");
+		String nome2 = read.next();
+		
+		boolean equal = nome1.equals(nome2);
+		
+		if(equal) {
+			System.out.print("Os nomes sao iguais");
+		}else {
+			System.out.print("NÃO SÃO IGUAIS");
+		}
+		
+	}
+}

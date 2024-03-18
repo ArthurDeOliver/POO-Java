@@ -1,0 +1,11 @@
+package encap_e_abs1;
+
+public class main {
+	public static void main(String[] args) {
+		
+		Post arthur = new Post("texto","link.com.br");
+		
+		arthur.Curtir(0)
+		
+	}
+}

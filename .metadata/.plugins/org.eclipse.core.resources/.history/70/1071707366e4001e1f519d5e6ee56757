@@ -1,0 +1,11 @@
+package lista_array;
+
+public class TesteArrayInfinito {
+	public static void main(String[] args) {
+		
+		String teste = "    arthur     ";
+		
+		System.out.print(teste.length());
+		
+	}
+}

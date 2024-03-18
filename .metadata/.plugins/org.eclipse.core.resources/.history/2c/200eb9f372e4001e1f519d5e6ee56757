@@ -1,0 +1,27 @@
+package encap_e_abs4;
+
+public class main {
+	public static void main(String[] args) {
+		
+		Contato arthur = new Contato("Arthur");
+		
+		arthur.EnviarMensagem("Arthur, já já eu chego no escritório!!");
+		arthur.EnviarMensagem("fiz macarronada pra almoçar");
+		arthur.EnviarMensagem("vamo pro shopping mais tarde?");
+		arthur.EnviarMensagem("IAE!");
+		arthur.EnviarMensagem("EIII");
+		
+		
+		arthur.LerMensagem(1);
+		
+		
+		int q1 = arthur.getMensagens();
+		
+		System.out.println(q1);
+	
+		arthur.LerMensagem(1);
+		
+		arthur.MostrarMensagens();
+		
+	}
+}

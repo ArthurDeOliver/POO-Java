@@ -1,0 +1,22 @@
+package fundamentos_objeto3;
+
+public class Main {
+	public static void main(String[] args) {
+		
+		Post publicacao_Arthur = new Post("TEXTO PUBLICACAO","https://github.com/ArthurDeOliver");
+		
+		for(int i = 0; i < 3; i++) {
+			publicacao_Arthur.curti();
+		}
+		
+		System.out.print(publicacao_Arthur.numCurtidas);
+		
+		for(int j = 0; j< 10; j++) {
+			publicacao_Arthur.compartilhar();
+		}
+		
+		System.out.print(publicacao_Arthur.numShare);
+		
+		
+	}
+}

@@ -1,0 +1,22 @@
+package lista_string;
+import java.util.Scanner;
+
+public class Questao2 {
+	public static void main(String[] args) {
+		Scanner read = new Scanner(System.in);
+		
+		String passValid = "eu amo programar";
+		
+		System.out.print("Digite sua senha: ");
+		String passUser = read.next();
+		passUser = passUser.trim();
+		
+		boolean equals = passUser.equals(passValid);
+		
+		if(equals) {
+			System.out.println("SENHA VALIDA!!");
+		}else {
+			System.out.print("XXXX senha invalida XXXX");
+		}
+	}
+}

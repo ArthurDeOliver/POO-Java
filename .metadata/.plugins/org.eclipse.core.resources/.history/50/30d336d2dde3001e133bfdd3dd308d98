@@ -1,0 +1,17 @@
+package encap_e_abistracao;
+
+
+public class main {
+	public static void main(String[] args) {
+		
+		ContaBancaria arthur = new ContaBancaria("arthur",100);
+		
+		arthur.debitar(50);
+		
+		double saldo = arthur.getSaldo();
+		arthur.creditar(500);
+		
+		System.out.print(arthur.getNome());
+	}
+}
+

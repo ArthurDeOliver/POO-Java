@@ -1,0 +1,14 @@
+package fundamentos_objeto4;
+
+public class Main {
+	public static void main(String[] args) {
+		
+		Aluno arthur = new Aluno("Arthur","70775345458");
+		
+		arthur.notas[0] = 8.4;
+		arthur.notas[1] = 9.7;
+		arthur.notas[2] = 8.3;
+		arthur.notas[3] = 10.0;
+		
+	}
+}

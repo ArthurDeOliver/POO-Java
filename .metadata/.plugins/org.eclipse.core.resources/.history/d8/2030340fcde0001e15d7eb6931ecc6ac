@@ -1,0 +1,39 @@
+package fundamentos_objetos;
+import java.util.*;
+
+public class main1 {
+	public static void main(String[] args) {
+		
+		Scanner read = new Scanner(System.in);
+		
+		System.out.println("====CADASTRO DE PACIENTE====");
+
+		System.out.print("Digite o CÓDIGO do novo paciente:");
+		int codigoPaciente = read.nextInt();
+		read.nextLine();
+		System.out.print("Digite o NOME do novo paciente:");
+		String novoPaciente = read.nextLine();
+		System.out.print("Digite a DATA DE NASCIMENTO do novo paciente:");
+		String data = read.nextLine();
+		System.out.print("Digite o GÊNERO do novo paciente:");
+		char generoPaciente = read.nextLine().charAt(0);
+		System.out.print("Digite o PLANO DE SAÚDE do novo paciente:");
+		String planoPaciente = read.nextLine();
+		System.out.print("Digite alguma ALERGIA do novo paciente:");
+		String alergiaPaciente = read.nextLine();
+		
+		System.out.print("Digite o TIPO SANGUÍNEO do novo paciente:");
+		String sanguePaciente = read.next();
+		
+		Paciente ArthurAngelo = new Paciente(codigoPaciente,novoPaciente,data,generoPaciente,planoPaciente,alergiaPaciente,sanguePaciente);
+
+		System.out.println(ArthurAngelo.codigo);
+		System.out.println(ArthurAngelo.nome);
+		System.out.println(ArthurAngelo.dataNascimento);
+		System.out.println(ArthurAngelo.sexo);
+		System.out.println(ArthurAngelo.planoSaude);
+		System.out.println(ArthurAngelo.alergia);
+		System.out.println(ArthurAngelo.tipoSanguineo);
+		
+	}
+}

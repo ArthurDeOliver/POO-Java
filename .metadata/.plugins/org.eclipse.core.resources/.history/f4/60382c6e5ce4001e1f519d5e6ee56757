@@ -1,0 +1,52 @@
+package encap_e_abs3;
+
+public class Produto {
+	private String nome;
+	private double preco;
+	private int quantidade_estoque;
+	
+	public Produto(String nome, double preco, int quantidade_estoque) {
+		this.nome = nome;
+		this.preco = preco;
+		this.quantidade_estoque = quantidade_estoque;
+	}
+
+	//set
+	void setNome(String nome) {
+		this.nome = nome;
+	}
+
+	void setPreco(double preco) {
+		this.preco = preco;
+	}
+
+	//get
+	int getQuantidadeEstoque() {
+		return this.quantidade_estoque;
+	}
+	
+	double getPreco() {
+		return this.preco;
+	}
+	
+	String getNome() {
+		return this.nome;
+	}
+	
+	String Comprar(int quantidade) {
+		
+		String resultado = "";
+		
+		this.quantidade_estoque -= quantidade;
+		
+		if(this.quantidade_estoque < 0) {
+			this.quantidade_estoque += quantidade;
+			resultado = "LIMITE ULTRAPASSADO! no estoque:" + this.quantidade_estoque;
+		}else {
+			resultado = "Compra efetuada!";
+		}
+		
+		return resultado;
+	}
+	
+}

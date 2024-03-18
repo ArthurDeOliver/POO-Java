@@ -1,0 +1,17 @@
+package fundamentos_objetos;
+
+public class Medico {
+	int codigo;
+	String nome;
+	String genero;
+	String especialidade;
+	Endereco enderecoMedic;
+	
+	public Medico(int codigo, String nome,String genero,String especialidade,Endereco enderecoMedic) {
+		this.codigo = codigo;
+		this.nome = nome;
+		this.genero = genero;
+		this.especialidade = especialidade;
+		this.enderecoMedic = enderecoMedic;
+	}
+}

@@ -1,0 +1,30 @@
+package fundamentos_objeto4;
+import java.util.*;
+
+public class Main {
+	public static void main(String[] args) {
+		
+		Scanner read = new Scanner(System.in);
+		Aluno arthur = new Aluno("Arthur","70775345458");
+		
+		System.out.print("Coloque a nota 1: ");
+		arthur.notas[0] = read.nextDouble();
+		
+		for(int i = 1; i < arthur.notas.length; i++) {
+			
+			System.out.print("Coloque a nota " +i+": ");
+			arthur.notas[i] = read.nextDouble();
+			
+		}
+		
+		
+//		arthur.notas[1] = 9.7;
+//		arthur.notas[2] = 8.3;
+//		arthur.notas[3] = 10.0;
+		
+		String resultado = arthur.CalcularMedia();
+		
+		System.out.print(resultado);
+		
+	}
+}

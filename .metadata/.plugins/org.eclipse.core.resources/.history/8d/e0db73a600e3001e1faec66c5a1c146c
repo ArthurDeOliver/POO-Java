@@ -1,0 +1,35 @@
+package lista_metodosEstaticos;
+import java.util.*;
+
+public class Questao6 {
+	public static void main(String[] args) {
+		Scanner read = new Scanner(System.in);
+		
+		System.out.println("Quantas unidades voce comprou de");
+		
+		System.out.println("latas 350ml: ");
+		double lata350ml = read.nextDouble();
+		
+		System.out.println("garrafas 600ml : ");
+		double lata600ml = read.nextDouble();
+		
+		System.out.println("garrafas 2litros: ");
+		double garrafa2litros = read.nextDouble();
+		
+		double resultadoFinal = QuantidadeLitros(lata350ml,lata600ml,garrafa2litros);
+		
+		System.out.print("Seu total de litros foi de: " + resultadoFinal + "Litros");
+		
+		
+	}
+	
+	public static double QuantidadeLitros(double qnt300, double qnt600, double qnt2litros) {
+		
+		double total;
+		
+		total = qnt300*0.35 + qnt600*0.6 + qnt2litros * 2;
+		
+		return total;
+	}
+	
+}
